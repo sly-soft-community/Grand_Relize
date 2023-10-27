@@ -1,0 +1,132 @@
+
+@import "@/styles/mixins.scss";
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(77deg, #003D5B 2.08%, #003D5B 14.54%, #FF6B35 100%);
+}
+
+.hero {
+    z-index: 1000;
+
+    position: relative;
+
+    &__wrapper {
+
+        height: 100%;
+        opacity: .45;
+        background: url('../../../media/img/hero__bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        @include respond-to("md"){
+            background-size: auto 100%;
+            background-position: center;
+
+        }
+    }
+
+    &__contant {
+        max-width: calc(var(--max-width) + 20px);
+        margin: 0 auto;
+        padding: 0 10px;
+        padding-top: 119px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        @include respond-to("lg"){
+            padding-top: 57px;
+            padding: 0 20px;
+        
+        }
+    }
+
+    &__contantWrapper {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: transparent;
+        top: 0;
+        left: 0;
+    }
+   
+   
+}
+
+.logo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.269px;
+    margin-bottom: 80px;
+    @include respond-to("lg"){
+        margin: auto;
+        margin-bottom: 150px;
+    }
+}
+
+.title {
+    color: #FF9A4E;
+    font-family: 'Toxigenesis';
+    font-size: 40.999px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 22px;
+
+    @include respond-to("lg") {
+        align-self: stretch;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 1.3px;
+    }
+}
+
+.description {
+    color: #F5F5F5;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 640px;
+    margin-bottom: 104px;
+
+    @include respond-to("lg") {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 98px;
+    }
+}
+
+.info {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-left: 121px;
+    margin-top: auto;
+    margin-bottom: 58px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--adittional-color-c-3-g, #FCFDFD);
+        font-family: 'Montserrat';
+        font-size: 16.996px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21.245px;
+    }
+    @include respond-to("lg"){
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+            gap: 12px;
+    }
+}
+
+
+
