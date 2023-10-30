@@ -4,7 +4,7 @@ import './[lang]/globals.scss'
 export async function generateMetadata({ params: { lang } }) {
     return {
         title: 'ГРАНД РИЛАЙЗ',
-        description: "Хуйня",
+        description: "строительная компания",
         alternates: {
             languages: {
                 "x-default": "/",
