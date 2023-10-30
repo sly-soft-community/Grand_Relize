@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import styles from './Hero.module.scss'
-import logoLargeImg from '@/media/img/logo-large.png'
+import logoLargeImg from '@/media/img/logo-large.svg'
 import Image from 'next/image';
 import MailIcon from "../../../media/icons/Mail.svg"
 import PhoneIcon from "../../../media/icons/Phone.svg"
