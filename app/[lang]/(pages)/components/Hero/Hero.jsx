@@ -10,7 +10,7 @@ import PointIcon from "../../../media/icons/Point.svg"
 function Hero() {
     const infoArray = [
         { text: '+996 503 88 99 88 ; +996 997 88 99 88', icon: PhoneIcon },
-        { text: 'profit_realize@mail.ru', icon: MailIcon },
+        { text: 'info@grand-realize.kg', icon: MailIcon },
         { text: 'Бишкек, Аламудунский район, 1-я улица, 1а/1', icon: PointIcon },
     ]
 
